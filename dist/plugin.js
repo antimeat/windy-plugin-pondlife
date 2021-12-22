@@ -8,7 +8,7 @@ W.loadPlugin(
 /* Mounting options */
 {
   "name": "windy-plugin-pondlife",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "davinchi",
   "repository": {
     "type": "git",
@@ -224,7 +224,7 @@ function() {
             shadowSize: [30, 30],
         });
 
-        const bue_icon = L.icon({
+        const blue_icon = L.icon({
             className: 'resources-icon',
 			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
