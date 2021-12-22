@@ -8,7 +8,7 @@ W.loadPlugin(
 /* Mounting options */
 {
   "name": "windy-plugin-pondlife",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "davinchi",
   "repository": {
     "type": "git",
@@ -224,6 +224,16 @@ function() {
             shadowSize: [30, 30],
         });
 
+        const bue_icon = L.icon({
+            className: 'resources-icon',
+			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [20, 30],
+            iconAnchor: [12, 30],
+            popupAnchor: [1, -34],
+            shadowSize: [30, 30],
+        });
+
         const green_icon = L.icon({
             className: 'resources-icon',
 			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
@@ -346,7 +356,7 @@ function() {
 			}
 
 			const swell_marker = L.marker([lat, lon],{
-                icon: black_icon,
+                icon: blue_icon,
                 zIndexOffset: -300,
             }).addTo(map);
 
@@ -414,7 +424,7 @@ function() {
 			const marker = L.marker([spot_lat, spot_lon],{
                 icon: black_icon,
                 zIndexOffset: -300,
-				opacity: 0.7,
+				opacity: 1,
 				iconSize: 50,
             }).addTo(map);
 
