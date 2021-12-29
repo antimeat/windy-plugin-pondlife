@@ -8,7 +8,7 @@ W.loadPlugin(
 /* Mounting options */
 {
   "name": "windy-plugin-pondlife",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "author": "davinchi",
   "repository": {
     "type": "git",
@@ -362,10 +362,14 @@ function() {
 
 			swell_marker.bindTooltip("<h5>" + swell_name + "</h5>");
 
-			swell_marker.bindPopup(
-                '<img src=' + swell_current + ' style="opacity: 1;">' +
-                '<img src=' + swell_history + ' style="opacity: 1;">', {
-				minWidth: 580,
+            swell_marker.bindPopup(
+                '<style> div.container {display:inline-block;} p {text-align:center;} </style>' +
+                '<div class = "container">' +
+                    '<img src=' + swell_current + ' style="float:left; opacity: 1; width:45%;"/>' +
+                    '<img src=' + swell_history + ' style="float:right; opacity: 1; width:55%;"/>' +
+                '</div>' , {
+
+                minWidth: 800,
 			});
 
 			return swell_marker;
