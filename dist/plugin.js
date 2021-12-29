@@ -8,7 +8,7 @@ W.loadPlugin(
 /* Mounting options */
 {
   "name": "windy-plugin-pondlife",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "author": "davinchi",
   "repository": {
     "type": "git",
@@ -418,8 +418,8 @@ function() {
 
 			obs_marker.bindTooltip("<h5>obs: " + obs_name + "</h5>");
 
-			obs_marker.bindPopup('<img src = ' + obs_link + '/>' + '<br>', {
-				minWidth: 580,
+            obs_marker.bindPopup('<img src = ' + obs_link + ' style="width:100%;"/>' + '<br>', {
+				minWidth: 700,
 			});
 
 			return obs_marker;
