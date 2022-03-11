@@ -8,7 +8,7 @@ W.loadPlugin(
 /* Mounting options */
 {
   "name": "windy-plugin-pondlife",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "davinchi",
   "repository": {
     "type": "git",
